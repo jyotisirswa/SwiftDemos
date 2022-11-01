@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Os-hV-dY3">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shopping List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ShoppingListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ShoppingListViewController" customModule="LevelShoeCaseStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwb-b3-1Bd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <subviews>
+                                    <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBC-wi-Uhp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="4" id="Q4f-m6-0ER">
+                                            <size key="itemSize" width="300" height="300"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="default" id="39e-vR-9NH">
+                                                <rect key="frame" x="57" y="0.0" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KQi-QV-0oZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </collectionViewCellContentView>
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DBC-wi-Uhp" firstAttribute="leading" secondItem="mwb-b3-1Bd" secondAttribute="leading" id="0ra-iU-vM1"/>
+                                    <constraint firstAttribute="bottom" secondItem="DBC-wi-Uhp" secondAttribute="bottom" id="m8g-pu-Wx1"/>
+                                    <constraint firstItem="DBC-wi-Uhp" firstAttribute="top" secondItem="mwb-b3-1Bd" secondAttribute="top" id="tSH-Ay-rwI"/>
+                                    <constraint firstAttribute="trailing" secondItem="DBC-wi-Uhp" secondAttribute="trailing" id="wuU-HY-Ln4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mwb-b3-1Bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cn2-hb-flB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mwb-b3-1Bd" secondAttribute="bottom" id="FN3-AL-mAj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mwb-b3-1Bd" secondAttribute="trailing" id="j3q-s4-0P1"/>
+                            <constraint firstItem="mwb-b3-1Bd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pda-pu-eeU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tpp-mP-KTz">
+                        <rightBarButtonItems>
+                            <barButtonItem image="cartListedNavButton" id="bDD-O6-W6F">
+                                <connections>
+                                    <action selector="buttonCartListTapped:" destination="BYZ-38-t0r" id="q7e-dX-5Xj"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="wishlistNavButton" landscapeImage="wishlistNavButton" largeContentSizeImage="wishlistNavButton" style="done" id="GJQ-xa-4pU">
+                                <connections>
+                                    <action selector="buttonWishListTapped:" destination="BYZ-38-t0r" id="Tg1-M8-mn8"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionViewShoppingList" destination="DBC-wi-Uhp" id="e2Z-cH-EVC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="121"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tso-6C-tCn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Os-hV-dY3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KN3-zh-CgV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hp8-No-cWB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYW-VT-kEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="120.53571428571428"/>
+        </scene>
+        <!--Shopping Item Detail View Controller-->
+        <scene sceneID="34X-sX-uLs">
+            <objects>
+                <viewController storyboardIdentifier="ShoppingItemDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cPq-O9-6f2" customClass="ShoppingItemDetailViewController" customModule="LevelShoeCaseStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lgS-NK-LHH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NX7-l6-YJ1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w6S-bC-ELr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NX7-l6-YJ1" firstAttribute="leading" secondItem="w6S-bC-ELr" secondAttribute="leading" id="RL8-vq-rSz"/>
+                            <constraint firstItem="w6S-bC-ELr" firstAttribute="trailing" secondItem="NX7-l6-YJ1" secondAttribute="trailing" id="XvI-Wq-iLD"/>
+                            <constraint firstItem="w6S-bC-ELr" firstAttribute="top" secondItem="NX7-l6-YJ1" secondAttribute="top" id="hBh-9a-nzG"/>
+                            <constraint firstItem="w6S-bC-ELr" firstAttribute="bottom" secondItem="NX7-l6-YJ1" secondAttribute="bottom" id="qAM-ny-1TG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Rm-x0-hMw">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Xss-ic-6Ll"/>
+                        <barButtonItem key="rightBarButtonItem" image="wishlistNavButton" landscapeImage="wishlistNavButton" largeContentSizeImage="wishlistNavButton" style="done" id="SUZ-wj-tNW">
+                            <connections>
+                                <action selector="wishListCompleted:" destination="cPq-O9-6f2" id="cY2-6L-XXA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navRightBarButton" destination="SUZ-wj-tNW" id="Zsk-6Q-ZIr"/>
+                        <outlet property="tableViewItemDetails" destination="NX7-l6-YJ1" id="7cv-8d-iSZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdo-Tj-NHh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="121"/>
+        </scene>
+        <!--Wish List Table View Controller-->
+        <scene sceneID="VF6-sq-raZ">
+            <objects>
+                <tableViewController storyboardIdentifier="wishListTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DFh-1T-uuA" customClass="WishListTableViewController" customModule="LevelShoeCaseStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="300" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gYg-hn-H1D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOD-TI-kCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2208.695652173913" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cartListedNavButton" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="wishlistNavButton" width="21.333333969116211" height="21.333333969116211"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
